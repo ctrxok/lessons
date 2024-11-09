@@ -1,0 +1,27 @@
+body{
+    background: #000000cd;
+    color: #263027;
+    padding: 50px;
+}
+.wrapper{
+    background: rgb(250, 244, 215);
+    padding: 50px;
+    border-radius: 70px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.image{
+    margin-top: 100px;
+    text-align: center;
+}
+.image img{
+    width: 100%;
+    border-radius: 20px;    
+}
+
+.ingridientList__item{
+    padding: 5px;
+    
+}
