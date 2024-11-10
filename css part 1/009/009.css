@@ -1,0 +1,121 @@
+/* task 1 */
+.wrapper{
+    width: 100%;
+    padding:0 200px;
+}
+.task{
+    width: 80%;
+    background: #948282;
+    padding: 30px;
+    border-radius: 20px;
+}
+.task:not(:last-child){
+    margin-bottom: 20px;
+}
+.task1 > div{
+    margin-bottom: 15px;
+}
+.block{
+    height: 40px;
+    background-color: bisque;
+}
+div[lang="uk"]{
+    background-color: #d4bcbc;
+    width: 100px;
+    color: white;
+    font-size: 30px;
+}
+#block2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/* task 2 */
+.container label{
+    display: inline-block;
+    width: 100px;
+}
+.container{
+    margin-bottom: 10px;
+}
+.container input{
+    height: 30px;
+    margin-right: 20px ;
+    border: none;
+}
+.container input:hover{
+    border-radius: 10px;
+}
+.container input:focus{
+    outline: none;
+    border: 1px dashed brown;
+}
+.task2 button{
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+}
+.task2 button[type="submit"]{
+    background: green;
+    margin: 0 20px 0 0;
+}
+/* task 3 */
+.navigation__link{
+    font-size: 20px;
+    text-decoration: none;
+}
+    
+.navigation__item:not(:last-child){
+    margin-bottom: 10px;
+}
+.navigation__link:visited{
+    color: red;
+}
+.navigation__link:link{
+    color: black;
+}
+.navigation__link:hover{
+    color: white;
+}
+/* task 4 */
+table{
+    width: 500px;
+}
+table tr{
+   height: 50px;
+}
+table td{
+    height: 30px;
+    width: 30px;
+    color: #FFF;
+    text-align: center;
+}
+table tr:nth-child(odd){
+    background: aqua;
+}
+table tr:nth-child(even){
+    background: #000;;
+}
+/* task 5 */
+.task5{
+    color: white;
+}
+.task5 p:nth-child(1){
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+.task5 p:last-child{
+    color: aqua;
+    font-size: 20px;
+    font-style: italic;
+}
+.task5 div{
+    color: #1258b6;
+    font-weight: 800;
+}
