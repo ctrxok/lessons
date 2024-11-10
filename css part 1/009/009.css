@@ -119,3 +119,12 @@ table tr:nth-child(even){
     color: #1258b6;
     font-weight: 800;
 }
+.task div:hover{
+    font-size: 30px;
+}
+.task5 p:last-child:hover{
+    color: blueviolet;
+}
+.task5 p:nth-child(1):hover{
+    font-size: 16px;
+}
