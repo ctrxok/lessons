@@ -1,0 +1,40 @@
+body{
+    padding: 10% 20%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#C58E21,#33302B);
+}
+.image{
+    box-shadow: inset 20px 20px 100px blue;
+    -moz-box-shadow: inset 20px 20px 100px blue;
+    -o-box-shadow: inset 20px 20px 100px blue;
+    -webkit-box-shadow: inset 20px 20px 100px blue;
+    -ms-box-shadow: inset 20px 20px 100px blue;
+}
+.text__block{
+    width: 500px;
+    
+    margin-bottom: 30px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, blue, brown);
+    background-image: -moz-linear-gradient(45deg, blue, brown);
+    background-image: -ms-linear-gradient(45deg, blue, brown);
+    background-image: -o-linear-gradient(45deg, blue, brown);
+    background-image: -webkit-linear-gradient(45deg, blue, brown);
+
+    color: #fff;
+    text-shadow: 5px 5px #000;
+    font-size: 20px;
+    font-weight: 600;
+    
+    animation: myAnimation 4s ease 0s infinite normal none;
+}
+
+/* animation */
+@keyframes myAnimation {
+    0%{
+        background-image: linear-gradient(45deg, red, green);
+    }
+    100%{
+        background-image: radial-gradient(45deg, violet, tomato);
+    } 
+}
