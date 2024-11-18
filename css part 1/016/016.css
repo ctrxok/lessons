@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.item{
+    border-radius: 20px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-image: radial-gradient(yellow, orange);
+    transition: transform 1s ease;
+}
+.item:not(:last-child){
+    margin-right: 20px;
+}
+.item:hover:first-child{
+    transform: scale(2);
+}
+.item:hover:nth-child(2){
+    transform: rotate(-45deg);
+}
+.item:hover:nth-child(3){
+    transform: translate(100px, 50px);
+}
+.item:hover:last-child{
+    transform: skew(20deg,30deg);
+}
