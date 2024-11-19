@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    animation: textColor 3s ease infinite alternate;
+}
+.item{
+    border-radius: 20px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-image: radial-gradient(yellow, orange);
+}
+.item:not(:last-child){
+    margin-right: 20px;
+}
+.item:first-child{
+    animation: changeOpacity 2s ease-in-out infinite alternate;
+}
+.item:nth-child(2){
+    background-image: linear-gradient(to bottom, white, orange);
+    animation: rotation 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1;
+}
+.item:nth-child(3){
+    width: 100px;
+    height: 100px;
+    animation: bigger 5s ease-in-out infinite alternate;
+}
+.item:nth-child(4){
+    position: absolute;
+    animation: move 6s ease-in-out infinite alternate;
+}
+@keyframes textColor{
+    0%{
+        color: black;
+    }
+    
+    100%{
+        color: #fff;}
+   
+}
+@keyframes changeOpacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes rotation {
+    0%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes bigger {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+@keyframes move {
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 90%;
+    }
+}
