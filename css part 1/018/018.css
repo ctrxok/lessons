@@ -1,0 +1,47 @@
+body{
+    background: radial-gradient(yellow, orange);
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.item{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(white, blueviolet);
+    border-radius: 40px;
+    transition: filter 1s ease-in-out;
+}
+.item:last-child{
+    background: url("https://images.pexels.com/photos/133464/pexels-photo-133464.jpeg?cs=srgb&dl=purple-petals-flower-133464.jpg&fm=jpg")0 0/100% 100%;
+    div{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        backdrop-filter: sepia(100%) contrast(20) grayscale(.5);
+    }
+  
+}
+.item:first-child{
+    filter: blur(2px) opacity(.5) drop-shadow(2px 2px 4px);
+}
+.item:nth-child(2){
+    color: white;
+    filter: brightness(.4) invert(1) saturate(1);
+}
+
+.item:first-child:hover{
+    filter: none;
+}
+.item:nth-child(2):hover{
+    filter: brightness(1);
+}
+.item:last-child > div:hover{
+    backdrop-filter: sepia(50%) contrast(40) grayscale(.3) ;
+}
