@@ -79,4 +79,55 @@
         opacity: 1;
     }
 }
+@-o-keyframes blinking {
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+@-o-keyframes vis {
+    from{
+        opacity: .7;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-moz-keyframes blinking {
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+@-moz-keyframes vis {
+    from{
+        opacity: .7;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blinking {
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes vis {
+    from{
+        opacity: .7;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
