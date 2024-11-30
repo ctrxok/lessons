@@ -1,0 +1,49 @@
+body{
+    background: radial-gradient(pink, tomato);
+}
+#wrapper{
+    height: 100vh;
+}
+.flexcont{
+    border: 2px dotted black;
+    padding: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+  
+}
+.flexcont:not(:last-child){
+    margin-bottom: 50px;
+}
+.flexcont:first-child > .item:first-child{
+    flex-grow: 1;
+}
+.flexcont:last-child{
+    align-items: center;
+}
+.item{
+    background: blueviolet;
+    height: 100px;
+    flex: 0 1 300px;
+    border-radius: 30px;
+}
+.i2{
+    flex-basis: 200px;
+}
+.flexcont:nth-child(2){
+    align-items: center;
+}
+.highlight{
+    flex-shrink: 0;
+}
+.column{
+    height: 80%;
+    flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+    .flexcont:first-child{
+        flex-direction: column;
+
+    }
+}
